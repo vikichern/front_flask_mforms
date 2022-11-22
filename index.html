@@ -9,12 +9,13 @@
     </head>
     <body>
         <div id="show"></div>
+        <div id="show"></div>
         <script>
             const MYSERVER = "https://medicaform.onrender.com/data";
 
-            fetch('MYSERVER')
-                .then(response => response.json())
-                .then(json => console.log(json))
+            // fetch('MYSERVER')
+            //     .then(response => response.json())
+            //     .then(json => console.log(json))
 
             axios.get(MYSERVER).then((response) => {   
             show.innerHTML = response.data.map 
@@ -24,8 +25,8 @@
         
             demo.innerHTML = `
         
-                <input type="text" value = '${MYSERVER}'>
-                <input type="text" value = 'jhdhkjg'>
+            <input type="text" value = '${MYSERVER}'>
+            <input type="text" value = 'jhdhkjg'>
         
         `;
         </script>    
