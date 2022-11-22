@@ -13,9 +13,16 @@
             const MYSERVER = "https://medicaform.onrender.com/data";
             axios.get(MYSERVER).then((response) => {   
             show.innerHTML = response.data.map 
-            ((student) => `<div><li> ${student.age} ,${student.name} </div>`)
+            ((student) => `<div><h1><li> ${student.age} ,${student.name}</li></h1><br></div>`)
             .join("");
             });
+        
+        demo.innerHTML = `
+        
+        <input type="text" value = '${MYSERVER}'>
+        <input type="text" value = 'jhdhkjg'>
+        
+        `;
         </script>    
     </body>
 </html>
